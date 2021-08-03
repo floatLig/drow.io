@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-08-03T07:52:37.124Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="HFVP0198hcvwfEPPeUpY" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-03T07:54:56.272Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="8KkrKmtHwBYZdf4AKhXU" version="14.9.3" type="github">
   <diagram id="ELWokhWK0_V1DUADCehn" name="Page-1">
-    <mxGraphModel dx="791" dy="444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1078" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9insMum_-L4Vv3MbVgxR-42" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientDirection=north;shadow=0;sketch=1;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1460" width="789" height="290" as="geometry" />
+        </mxCell>
         <mxCell id="9insMum_-L4Vv3MbVgxR-24" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d79b00;gradientDirection=north;shadow=0;sketch=1;glass=0;strokeWidth=1;fillColor=#ffe6cc;" vertex="1" parent="1">
           <mxGeometry x="20" y="520" width="790" height="940" as="geometry" />
         </mxCell>
@@ -116,11 +119,14 @@
         <mxCell id="9insMum_-L4Vv3MbVgxR-37" value="init Prometheus&lt;br&gt;（monitoring system）" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=1;fontColor=#000000;strokeWidth=1;fillColor=#ffffff;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
           <mxGeometry x="152.5" y="1380" width="125" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="9insMum_-L4Vv3MbVgxR-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="9insMum_-L4Vv3MbVgxR-40" target="9insMum_-L4Vv3MbVgxR-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9insMum_-L4Vv3MbVgxR-40" value="init global cancel signal&lt;br&gt;&lt;br&gt;Wait for stop signal" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=1;fontColor=#000000;strokeWidth=1;fillColor=#ffffff;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
           <mxGeometry x="145" y="1480" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9insMum_-L4Vv3MbVgxR-42" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;shadow=0;sketch=1;glass=0;" vertex="1" parent="1">
-          <mxGeometry x="19" y="1460" width="790" height="470" as="geometry" />
+        <mxCell id="9insMum_-L4Vv3MbVgxR-43" value="use WaitGroup() wait all agents wait" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=1;fontColor=#000000;strokeWidth=1;fillColor=#ffffff;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1590" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
