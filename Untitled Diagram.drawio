@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-21T15:11:18.625Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="LobZ9A3E3RsU6Pnmn1wC" version="15.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-10-03T08:31:35.634Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="qg520oDLwlu4PX8gQe1i" version="15.2.9" type="github" pages="5">
   <diagram id="ELWokhWK0_V1DUADCehn" name="Page-1">
     <mxGraphModel dx="1186" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -401,7 +401,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SDrpGnDXzg3tAw3M9wtN" name="Create new consumer for PN">
-    <mxGraphModel dx="1986" dy="662" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1788" dy="552" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="rxiDqykPIhHM7JtqIXdQ-0" />
         <mxCell id="rxiDqykPIhHM7JtqIXdQ-1" parent="rxiDqykPIhHM7JtqIXdQ-0" />
@@ -500,6 +500,18 @@
         </mxCell>
         <mxCell id="geTl802dRQ0veQP5NsW6-20" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.8pt&quot;&gt;fn := &lt;span style=&quot;color: #c7773e&quot;&gt;func&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;(&lt;/span&gt;name &lt;span style=&quot;color: #c7773e&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;index &lt;span style=&quot;color: #c7773e&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color: #c7773e&quot;&gt;string &lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;   &lt;/span&gt;&lt;span style=&quot;color: #c7773e&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color: #afbf7e&quot;&gt;fmt&lt;/span&gt;.&lt;span style=&quot;color: #b09d79&quot;&gt;Sprintf&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #6a8759&quot;&gt;&quot;kafka-&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;%s&lt;/span&gt;&lt;span style=&quot;color: #6a8759&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;%d&lt;/span&gt;&lt;span style=&quot;color: #6a8759&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;name&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;index&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" parent="rxiDqykPIhHM7JtqIXdQ-1" vertex="1">
           <mxGeometry x="-601.0033333333332" y="1691" width="404" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="0CD87iLp0mRaLBaYSiCd-0" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="rxiDqykPIhHM7JtqIXdQ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-591" y="1833" as="sourcePoint" />
+            <mxPoint x="995" y="1828" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0CD87iLp0mRaLBaYSiCd-1" value="check DeviceId len&amp;nbsp;&lt;br&gt;here DeviceId equals PNToken" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rxiDqykPIhHM7JtqIXdQ-1">
+          <mxGeometry x="-497" y="1917" width="171" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="0CD87iLp0mRaLBaYSiCd-2" value="SendToIOS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="rxiDqykPIhHM7JtqIXdQ-1">
+          <mxGeometry x="-590" y="1855" width="71" height="18" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -951,11 +963,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CWE5ft0ypiyHvULQX_uW" name="DLQ">
-    <mxGraphModel dx="1218" dy="857" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1586" dy="1062" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WI12Mk-jrN5fa7M4QESa-0" />
         <mxCell id="WI12Mk-jrN5fa7M4QESa-1" parent="WI12Mk-jrN5fa7M4QESa-0" />
-        <mxCell id="WI12Mk-jrN5fa7M4QESa-2" value="cd /data/shopee/NotiDlqInspector &amp;amp;&amp;amp; &lt;br&gt;sudo -u shopee ./DlqInspector -queueName=${option.queueName} -operationType=${option.operationType} &lt;br&gt;-numOfJobs=${option.numOfJobs}" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WI12Mk-jrN5fa7M4QESa-1">
+        <mxCell id="WI12Mk-jrN5fa7M4QESa-2" value="cd /data/shopee/NotiDlqInspector &amp;amp;&amp;amp; &lt;br&gt;sudo -u shopee ./DlqInspector -queueName=${option.queueName} -operationType=${option.operationType} &lt;br&gt;-numOfJobs=${option.numOfJobs}" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WI12Mk-jrN5fa7M4QESa-1" vertex="1">
           <mxGeometry x="-189" y="-197" width="583" height="46" as="geometry" />
         </mxCell>
       </root>
