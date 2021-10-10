@@ -1,1 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T07:58:42.240Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" version="15.4.3" etag="FApC8SUz498JWFt3Gbw9" type="github"><diagram id="vYyxgsc8nJtCiTUtytLk">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-10T09:22:30.132Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="y9MZeEnRJak3n8CABvrn" version="15.4.3" type="github" pages="3">
+  <diagram id="vYyxgsc8nJtCiTUtytLk" name="基本流程">
+    <mxGraphModel dx="818" dy="457" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="T4S_TWWiU6wzVh-GaljO-2" target="T4S_TWWiU6wzVh-GaljO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-2" value="initClient()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="51" width="119" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-3" value="InitNotiAccountCacheClient()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="283" y="63.5" width="164" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="T4S_TWWiU6wzVh-GaljO-4" target="T4S_TWWiU6wzVh-GaljO-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-4" value="initResource()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="133" width="119" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-6" value="InitLocalCache (X)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="283" y="133" width="109" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-7" value="InitMarketPushTaskLocalCache" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="283" y="166" width="178" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="1fbbSTR_uCPkwRPXPtI2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="T4S_TWWiU6wzVh-GaljO-8" target="1fbbSTR_uCPkwRPXPtI2-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="632.344827586207" y="207.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-8" value="InitNotiArEventKafka" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="283" y="199" width="121" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-9" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #c7773e&quot;&gt;type &lt;/span&gt;ProcessorConfig &lt;span style=&quot;color: #c7773e&quot;&gt;struct &lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;   &lt;/span&gt;Command      &lt;span style=&quot;color: #c7773e&quot;&gt;string&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #c7773e&quot;&gt;   &lt;/span&gt;Processor    &lt;span style=&quot;color: #6fafbd&quot;&gt;ProcessorFunc&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #6fafbd&quot;&gt;   &lt;/span&gt;Interceptors &lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;[]&lt;/span&gt;&lt;span style=&quot;color: #6fafbd&quot;&gt;ServerInterceptor&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #6fafbd&quot;&gt;   &lt;/span&gt;Req          &lt;span style=&quot;color: #c7773e&quot;&gt;interface&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;{}&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;   &lt;/span&gt;Resp         &lt;span style=&quot;color: #c7773e&quot;&gt;interface&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;{}&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="283.00103448275854" y="242.00068965517244" width="294" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-10" value="registerProcesser()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="267" width="119" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="T4S_TWWiU6wzVh-GaljO-12" value="对外提供命令，供外界使用（类似暴露HTTP）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="302" width="257" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="1fbbSTR_uCPkwRPXPtI2-2" value="getTaskFromLocalCache()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="633" y="186.5" width="166" height="42.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="yoes0grAFsz-kT1WeaNP" name="AR">
+    <mxGraphModel dx="1218" dy="857" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="eDmhOHaWlf8XGTlHbSn2-0" />
+        <mxCell id="eDmhOHaWlf8XGTlHbSn2-1" parent="eDmhOHaWlf8XGTlHbSn2-0" />
+        <mxCell id="hNbwJZ_NwCbU3gmjOywG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="eDmhOHaWlf8XGTlHbSn2-1" source="hNbwJZ_NwCbU3gmjOywG-0" target="hNbwJZ_NwCbU3gmjOywG-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hNbwJZ_NwCbU3gmjOywG-0" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #787878&quot;&gt;// url&lt;br&gt;&lt;/span&gt;redirectUrl := &lt;span style=&quot;color: #4eade5&quot;&gt;p&lt;/span&gt;.task.&lt;span style=&quot;color: #b09d79&quot;&gt;GetArConfig&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;()&lt;/span&gt;.&lt;span style=&quot;color: #b09d79&quot;&gt;GetRedirectUrl&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;()&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #787878&quot;&gt;//redirectUrl = addUtm(redirectUrl)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #787878&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #787878&quot;&gt;// This field will be used to populate app_rl for the AR, which is a unified way to handle AR redirection&lt;br&gt;&lt;/span&gt;noti.PushRedirect = &lt;span style=&quot;color: #afbf7e&quot;&gt;proto&lt;/span&gt;.&lt;span style=&quot;color: #b09d79&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;(&lt;/span&gt;redirectUrl&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;)&lt;br&gt;&lt;/span&gt;noti.ActionInfo.RedirectUrl = &lt;span style=&quot;color: #afbf7e&quot;&gt;proto&lt;/span&gt;.&lt;span style=&quot;color: #b09d79&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;(&lt;/span&gt;redirectUrl&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="eDmhOHaWlf8XGTlHbSn2-1">
+          <mxGeometry x="-48" y="-136" width="540" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="hNbwJZ_NwCbU3gmjOywG-2" value="当发送AR时，在Notification中：&lt;br&gt;&lt;div&gt;&lt;span&gt;1.&amp;nbsp; noti.PushRedirect = noti.ActionInfo.RedirectUrl = RedirectUrl&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="eDmhOHaWlf8XGTlHbSn2-1">
+          <mxGeometry x="-48" y="43" width="348" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="fzh_fbEs4TCBeXMugb0h-0" value="GetTaskFromLocalCache()" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="eDmhOHaWlf8XGTlHbSn2-1">
+          <mxGeometry x="10" y="226" width="194" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="fzh_fbEs4TCBeXMugb0h-1" value="If task == nil&amp;nbsp;&lt;br&gt;GetTask (from MarketPush)" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="eDmhOHaWlf8XGTlHbSn2-1">
+          <mxGeometry x="10" y="315" width="194" height="51" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5wKw4N_8OAbhDPXgQ37e" name="TODO">
+    <mxGraphModel dx="818" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ni5rMzQ4TMBepi25m1Yy-0" />
+        <mxCell id="ni5rMzQ4TMBepi25m1Yy-1" parent="ni5rMzQ4TMBepi25m1Yy-0" />
+        <mxCell id="ni5rMzQ4TMBepi25m1Yy-2" value="1. MarketPush: Task&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="ni5rMzQ4TMBepi25m1Yy-1">
+          <mxGeometry x="195" y="120" width="130" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
