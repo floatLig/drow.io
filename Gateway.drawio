@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T10:33:40.576Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="qgJ47MO7UW0cXXtEqS36" version="15.4.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-11T02:02:54.322Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="c4L0JxKGWzF6hgKxELoW" version="15.4.3" type="github" pages="4">
   <diagram id="vYyxgsc8nJtCiTUtytLk" name="基本流程">
     <mxGraphModel dx="818" dy="457" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -162,6 +162,50 @@
         <mxCell id="ni5rMzQ4TMBepi25m1Yy-1" parent="ni5rMzQ4TMBepi25m1Yy-0" />
         <mxCell id="ni5rMzQ4TMBepi25m1Yy-2" value="1. MarketPush: Task&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="ni5rMzQ4TMBepi25m1Yy-1">
           <mxGeometry x="195" y="120" width="130" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wxpXCUnq8qugU7syxLN0" name="Inapp">
+    <mxGraphModel dx="1388" dy="552" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-0" />
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-1" parent="6wX1tUDcOk1WTFHZuXFK-0" />
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-2" value="InappSplitPayload == true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="-40" y="170" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-4" value="SaveInappMsg: 存在Redis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="243" y="130" width="151" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="6wX1tUDcOk1WTFHZuXFK-1" source="6wX1tUDcOk1WTFHZuXFK-6" target="6wX1tUDcOk1WTFHZuXFK-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-6" value="KVLockKey.Lock()" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="261" y="188" width="158" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="6wX1tUDcOk1WTFHZuXFK-1" source="6wX1tUDcOk1WTFHZuXFK-7" target="6wX1tUDcOk1WTFHZuXFK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-7" value="buildNotifications" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="261" y="271" width="158" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-9" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; , monospace ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #afbf7e&quot;&gt;snappy&lt;/span&gt;.&lt;span style=&quot;color: #b09d79&quot;&gt;Encode&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="448" y="341" width="122" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-10" value="pikaV2.Set" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="261" y="352" width="158" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-12" value="ARWriter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="-26" y="533" width="58" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="6wX1tUDcOk1WTFHZuXFK-1" source="6wX1tUDcOk1WTFHZuXFK-13" target="6wX1tUDcOk1WTFHZuXFK-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-13" value="ar_kv_store_config.Set" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="127" y="520.5" width="158" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="6wX1tUDcOk1WTFHZuXFK-14" value="if fail: PushARWriterJob" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="6wX1tUDcOk1WTFHZuXFK-1">
+          <mxGeometry x="127" y="604" width="158" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
