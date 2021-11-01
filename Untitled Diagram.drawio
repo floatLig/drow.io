@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-01T01:44:22.218Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="kF8bZu2bKzVN3KLisceV" version="15.6.3" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2021-11-01T02:08:34.326Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="xW3O6-n5xRKqln9LtXOK" version="15.6.3" type="github" pages="7">
   <diagram id="ELWokhWK0_V1DUADCehn" name="Page-1">
     <mxGraphModel dx="1426" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1218,9 +1218,9 @@
             <mxPoint x="201" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tOwtMesJHPincFn1whEe-141" value="default" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="tOwtMesJHPincFn1whEe-44">
+        <mxCell id="tOwtMesJHPincFn1whEe-141" value="if device machine &lt;br&gt;code and MQ name &lt;br&gt;don&#39;t match" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="tOwtMesJHPincFn1whEe-44">
           <mxGeometry x="-0.0417" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-46" y="6" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tOwtMesJHPincFn1whEe-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="3blvVsmYXnFuqiChgUqX-1" source="tOwtMesJHPincFn1whEe-42" target="tOwtMesJHPincFn1whEe-47">
@@ -1566,7 +1566,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tOwtMesJHPincFn1whEe-133" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="3blvVsmYXnFuqiChgUqX-1" source="tOwtMesJHPincFn1whEe-128" target="tOwtMesJHPincFn1whEe-0">
+        <mxCell id="tOwtMesJHPincFn1whEe-133" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.005;entryY=0.726;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="3blvVsmYXnFuqiChgUqX-1" source="tOwtMesJHPincFn1whEe-128" target="tOwtMesJHPincFn1whEe-0">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="20" y="319.1199999999999" as="targetPoint" />
             <mxPoint x="-163" y="306.75" as="sourcePoint" />
